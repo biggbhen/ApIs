@@ -7,7 +7,16 @@ function GetJokes(e) {
   xhr.onload = function () {
     if (this.status === 200) {
       const response = JSON.parse(this.responseText);
-      console.log(response);
+      let output = '';
+      if (response.type === 'success') {
+        console.log(response);
+        response.value.forEach((x) => {
+          output += `<li>${x.joke}</li>`;
+        });
+      } else {
+        output += '<li>something went wrong</li>';
+      }
+      document.querySelector('.jokes').innerHTML = output;
     }
   };
   xhr.send();
