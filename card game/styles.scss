@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: auto;
+  padding: 1rem;
+  border: 2px solid blue;
+  max-width: 50rem;
+  width: 90%;
+  h1 {
+    text-align: center;
+    // margin: 1rem 0;
+  }
+  .player-containers {
+    border: 1px solid red;
+    display: flex;
+    .player1-box {
+      margin-right: 10%;
+    }
+    & > * {
+      width: 45%;
+      div {
+        height: 20rem;
+        border: 1px solid black;
+      }
+    }
+  }
+}
