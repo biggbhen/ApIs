@@ -27,10 +27,12 @@ document
           document.querySelector(
             '.player1-win'
           ).innerText = `${nameInput1Val} : Wins!`;
+          document.querySelector('.player2-win').innerText = '';
         } else if (player1Val < player2Val) {
           document.querySelector(
             '.player2-win'
           ).innerText = `${nameInput2Val} : Wins!`;
+          document.querySelector('.player1-win').innerText = '';
         } else {
           document.querySelector('.player2-win').innerText = `Time for war!`;
           document.querySelector('.player2-win').innerText = `Time for war!`;
