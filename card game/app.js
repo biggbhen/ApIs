@@ -20,17 +20,46 @@ document
       .then((data) => {
         document.querySelector('.player1-card').src = data.cards[0].image;
         document.querySelector('.player2-card').src = data.cards[1].image;
+        let player1Val = convertToVal(data.cards[0].value);
+        let player2Val = convertToVal(data.cards[1].value);
+        console.log(player1Val, player2Val);
+        if (player1Val > player2Val) {
+          document.querySelector(
+            '.player1-win'
+          ).innerText = `${nameInput1Val} : Wins!`;
+        } else if (player1Val < player2Val) {
+          document.querySelector(
+            '.player2-win'
+          ).innerText = `${nameInput2Val} : Wins!`;
+        } else {
+          document.querySelector('.player2-win').innerText = `Time for war!`;
+          document.querySelector('.player2-win').innerText = `Time for war!`;
+        }
       })
       .catch((err) => {
         console.log(`error${err}`);
       });
 
-    document.querySelector(
-      '.player1-win'
-    ).innerText = `${nameInput1Val} : Wins!`;
-    document.querySelector(
-      '.player2-win'
-    ).innerText = `${nameInput2Val} : Wins!`;
+    function convertToVal(val) {
+      if (val === 'ACE') {
+        return 14;
+      } else if (val === 'KING') {
+        return 13;
+      } else if (val === 'QUEEN') {
+        return 12;
+      } else if (val === 'JACK') {
+        return 11;
+      } else {
+        return Number(val);
+      }
+    }
+
+    // document.querySelector(
+    //   '.player1-win'
+    // ).innerText = `${nameInput1Val} : Wins!`;
+    // document.querySelector(
+    //   '.player2-win'
+    // ).innerText = `${nameInput2Val} : Wins!`;
 
     e.preventDefault();
   });
