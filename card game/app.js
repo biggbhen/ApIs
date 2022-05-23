@@ -34,7 +34,7 @@ document
           ).innerText = `${nameInput2Val} : Wins!`;
           document.querySelector('.player1-win').innerText = '';
         } else {
-          document.querySelector('.player2-win').innerText = `Time for war!`;
+          document.querySelector('.player1-win').innerText = `Time for war!`;
           document.querySelector('.player2-win').innerText = `Time for war!`;
         }
       })
