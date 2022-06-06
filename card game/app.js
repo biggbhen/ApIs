@@ -56,12 +56,5 @@ document
       }
     }
 
-    // document.querySelector(
-    //   '.player1-win'
-    // ).innerText = `${nameInput1Val} : Wins!`;
-    // document.querySelector(
-    //   '.player2-win'
-    // ).innerText = `${nameInput2Val} : Wins!`;
-
     e.preventDefault();
   });
