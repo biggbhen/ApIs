@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('./img/japan-1805865_1920.jpg');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.container {
+  background-color: #000000d0;
+  padding: 2rem;
+  /* border: 2px solid; */
+  width: 90%;
+  max-width: 38rem;
+  border-radius: 15px;
+}
+.searchField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 10px;
+  /* border: 1px solid; */
+}
+input[type='text'] {
+  border: none;
+  border-radius: 8px;
+  margin-right: 1rem;
+  outline: none;
+  padding: 5px 10px;
+  width: 50%;
+  background-color: #7c7c7c2b;
+  font-size: 1.1rem;
+  color: #fff;
+}
+.search {
+  background-color: #7c7c7c2b;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.search:hover {
+  background-color: #ffffff9b;
+}
+h1,
+h2,
+h3 {
+  margin: 1rem 0;
+  color: #fff;
+}
+h1 {
+  text-align: center;
+}
+i {
+  color: #fff;
+  font-size: 1rem;
+}
