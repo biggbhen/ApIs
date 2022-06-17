@@ -7,15 +7,16 @@
 }
 body {
   display: flex;
-  align-items: center;
+  /* background-color: pink; */
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh;  */
   background-image: url('./img/japan-1805865_1920.jpg');
   background-position: center;
-  background-size: 100% 100%;
+
   background-repeat: no-repeat;
 }
 .container {
+  margin-top: 7rem;
   background-color: #000000d0;
   padding: 2rem;
   /* border: 2px solid; */
@@ -71,11 +72,13 @@ h3 {
 i {
   font-size: 1rem;
 }
-
+.description {
+  display: flex;
+  align-items: center;
+}
 figure {
-  width: 70px;
-
-  /* border: 1px solid white; */
+  /* border: 1px solid; */
+  width: 60px;
 }
 .icon {
   width: 100%;
