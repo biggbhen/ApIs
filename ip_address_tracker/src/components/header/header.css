@@ -1,7 +1,36 @@
 .header {
-	border: 2px solid black;
 	padding: 2rem 1rem;
 	text-align: center;
 	background-image: url('../../assets/images/pattern-bg.png');
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
-/*  */
+
+h1 {
+	color: white;
+}
+
+/* form */
+form {
+	/* border: 2px solid black; */
+	display: flex;
+	width: 50%;
+	margin: 2rem auto;
+}
+form input[type='text'] {
+	width: 90%;
+	padding: 20px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border: none;
+}
+form button {
+	border: none;
+	color: white;
+	background-color: black;
+
+	width: 10%;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
