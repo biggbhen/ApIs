@@ -66,9 +66,8 @@ form button {
 	text-align: left;
 }
 .locationInfo div {
-	padding: 10px;
+	padding-left: 25px;
 	width: 25%;
-	/* border: 1px solid black; */
 }
 
 .ispDetails,
