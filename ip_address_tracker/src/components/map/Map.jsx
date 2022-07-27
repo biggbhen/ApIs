@@ -1,9 +1,13 @@
-import React from 'react'
-import './map.css'
 
+import styled from 'styled-components'
+
+const Mapdisp = styled.div`
+height: 27rem;
+	background-color: grey;
+`
 const Map = () => {
   return (
-    <div className='mapDisplay'></div>
+    <Mapdisp></Mapdisp>
   )
 }
 
