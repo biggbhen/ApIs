@@ -5,7 +5,7 @@ import arrow from '../../assets/images/icon-arrow.svg'
 
 
 const Headerstyle = styled.div`
-padding: 1rem;
+padding: 1rem 0;
 	text-align: center;
 	background-image: url(${pattern});
 	background-position: center;
@@ -26,6 +26,16 @@ const Form = styled.form`
     width: 60%;
     transition: 0.4s width ease-in-out;
 }
+@media only screen and (max-width: 600px) {
+    width: 80%;
+    transition: 0.4s width ease-in-out;
+   
+}
+@media only screen and (max-width: 500px) {
+    width: 90%;
+    transition: 0.4s width ease-in-out;
+   
+}
 `
 const H1 = styled.h1`
 	color: white;
@@ -34,12 +44,21 @@ const H1 = styled.h1`
 `
 const H2 = styled.h2`
 font-weight: 500;
-font-size: clamp(0.8rem, 1.5vw, 0.85rem);
+font-size: clamp(0.7rem, 1.5vw, 0.85rem);
 	 margin-bottom: 1rem;
+   @media only screen and (max-width: 600px) {
+    margin-bottom: 0.7rem;
+    font-size: 0.6rem;
+   
+}
 `
 const H3 = styled.h3`
 	font-weight: 500;
-	font-size: clamp(0.9rem, 1.5vw, 1rem)
+	font-size: clamp(0.9rem, 1.5vw, 1rem);
+  @media only screen and (max-width: 600px) {
+	font-size: 1.2rem;   
+   
+}
   `
   
 const Button = styled.button`
@@ -52,10 +71,11 @@ const Button = styled.button`
 	background-image: url(${arrow});
 	background-repeat: no-repeat;
 	background-position: center;
-  
+ 
 `
 const LocatioInf = styled.div`
-padding: 1.5rem 0;
+
+padding: 1rem 0;
 	position: absolute;
 	right: 50%;
 	transform: translateX(50%);
@@ -67,21 +87,32 @@ padding: 1.5rem 0;
 	-moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.73);
 	bottom: -3.5rem;
 	display: flex;
+  justify-content: space-around;
+  align-items: center;
 	border-radius: 10px;
 	background-color: #fff;
-	text-align: center;
+	
   @media only screen and (max-width: 785px) {
     width: 90%;
     transition: 0.4s width ease-in-out;
 }
-@media only screen and (max-width: 730px) {
-    width: 100%;
-    transition: 0.4s width ease-in-out;
-    border-radius: 0;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    bottom: -16rem;
+   
 }
+
+
 `
 const Details = styled.div`
-	width: 25%;
+  padding-right: 12px; 
+  text-align: center;
+  border-right: 1px solid grey;
+  @media only screen and (max-width: 600px) {
+    border-right: 0;
+    margin-bottom: 1rem;
+   
+}
 `
 const Search = styled.input.attrs(props=>({
   type: 'text',
@@ -96,6 +127,7 @@ width: 90%;
   &:focus{
     outline: none;
   }
+ 
 `
 
 
@@ -113,15 +145,15 @@ const Header = () => {
       <H2>IP ADDRESS</H2>
       <H3>192.212.174.101</H3>
       </Details>
-     <Details style={{borderLeft: '1px solid grey'}}>
+     <Details>
       <H2>LOCATION</H2>
       <H3>Brooklyn, NY 10001</H3>
       </Details>
-     <Details style={{borderLeft: '1px solid grey'}}>
+     <Details>
       <H2>TIMEZONE</H2>
       <H3>UTC-05:00</H3>
       </Details>
-     <Details style={{borderLeft: '1px solid grey'}}>
+     <Details style={{borderRight: '0'}}>
       <H2>ISP</H2>
       <H3>SpaceX Starlink</H3>
       </Details>
