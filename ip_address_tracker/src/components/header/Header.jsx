@@ -48,7 +48,7 @@ font-size: clamp(0.7rem, 1.5vw, 0.85rem);
 	 margin-bottom: 1rem;
    @media only screen and (max-width: 600px) {
     margin-bottom: 0.7rem;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
    
 }
 `
@@ -75,7 +75,7 @@ const Button = styled.button`
 `
 const LocatioInf = styled.div`
 
-padding: 1rem 0;
+padding: 1rem 0 ;
 	position: absolute;
 	right: 50%;
 	transform: translateX(50%);
@@ -89,7 +89,7 @@ padding: 1rem 0;
 	display: flex;
   justify-content: space-around;
   align-items: center;
-	border-radius: 10px;
+	border-radius: 12px;
 	background-color: #fff;
 	
   @media only screen and (max-width: 785px) {
@@ -99,6 +99,7 @@ padding: 1rem 0;
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     bottom: -16rem;
+    padding: 1rem 0  0 0;
    
 }
 
@@ -110,7 +111,7 @@ const Details = styled.div`
   border-right: 1px solid grey;
   @media only screen and (max-width: 600px) {
     border-right: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
    
 }
 `
