@@ -91,6 +91,7 @@ padding: 1rem 0 ;
   align-items: center;
 	border-radius: 12px;
 	background-color: #fff;
+  min-height: 100px;
 	
   @media only screen and (max-width: 785px) {
     width: 90%;
