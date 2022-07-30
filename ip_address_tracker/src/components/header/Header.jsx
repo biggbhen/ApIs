@@ -31,7 +31,7 @@ font-weight: 500;
 font-size: clamp(0.7rem, 1.5vw, 0.85rem);
 	 margin-bottom: 1rem;
    @media only screen and (max-width: 600px) {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.25rem;
     font-size: 0.7rem;
    
 }
@@ -85,21 +85,22 @@ const LocatioInf = styled.div`
   @media only screen and (max-width: 600px) {
    
     flex-direction: column;
-    bottom: -17rem;
-    padding: 1rem 0  0 0;
+    bottom: -10.8rem;
+    padding: 0;
    
 }
 
 
 `
 const Details = styled.div`
-  padding: 10px; 
+  padding: 8px; 
   text-align: left;
   border-right: 1px solid grey;
+  // border: 1px solid black;
   
   @media only screen and (max-width: 600px) {
     border-right: 0;
-    margin-bottom: 0.5rem;
+    text-align:center; 
    
 }
 `
