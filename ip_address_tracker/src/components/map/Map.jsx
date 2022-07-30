@@ -2,9 +2,8 @@
 import styled from 'styled-components'
 
 const Mapdisp = styled.div`
-height: 35rem;
+height: 75vh;
 border: 2px solid red
-	// background-color: grey;
 `
 const Map = () => {
   return (
